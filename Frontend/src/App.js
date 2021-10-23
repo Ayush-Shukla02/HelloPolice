@@ -3,14 +3,12 @@ import React from 'react';
 import "./App.css";
 import "./Pages/Flowchart_Editor/Flowchart.css";
 // import Flowchart from './src/Pages/Flowchart_Editor/Flowchart';
-import Flowchart from "./Pages/Flowchart_Editor/Flowchart";
-import ParticleBackground from "./ParticleBackground";
+import Home from "./Pages/Home/Home"
 
 function App() {
     return (
         <div className = "App">
-            <ParticleBackground />
-            <Flowchart />
+            <Home/>
         </div>
     )
 }
