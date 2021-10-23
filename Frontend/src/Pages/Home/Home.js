@@ -1,13 +1,3 @@
-import Flowchart from "../Flowchart_Editor/Flowchart";
-import ParticleBackground from "../../ParticleBackground";
-import Header from "../../Components/Header/Header";
-
 export default function Home() {
-    return (
-        <>
-            <Header />
-            <Flowchart />
-            <ParticleBackground />
-        </>
-    );
+    return <h1>This is homepage</h1>;
 }
