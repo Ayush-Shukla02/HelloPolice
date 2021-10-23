@@ -1,3 +1,4 @@
+import "./Login.css";
 export default function Login(){
     return (
         <>
@@ -58,7 +59,7 @@ export default function Login(){
                   </svg>
                 </span>
                                                     <input
-                                                        className="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                                                        className="w-full pl-4 pr-6 py-4  placeholder-gray-900 rounded-r-full focus:outline-none"
                                                         type="password" placeholder="Password"/>
                                                 </div>
                                                 <div className="flex items-center pl-6 mb-6 bg-white rounded-full">
