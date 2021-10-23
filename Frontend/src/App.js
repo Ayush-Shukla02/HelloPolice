@@ -1,33 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header/Header";
+import "./Pages/Flowchart_Editor/Flowchart.css";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
-import Flowchart from "./Pages/Flowchart_Editor/Flowchart";
-import Tracker from "./Pages/Tracker/Tracker";
-import ParticleBackground from "./ParticleBackground";
 
 function App() {
     return (
-        <Router>
-            <Header />
-            <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route path="/login">
-                    <Login />
-                </Route>
-                <Route path="/flowchart">
-                    <Flowchart />
-                </Route>
-                <Route path="/tracker">
-                    <ParticleBackground />
-                    <Tracker />
-                </Route>
-            </Switch>
-        </Router>
+        <div className="App">
+            <Home/>
+            <Login/>
+        </div>
     );
 }
 
