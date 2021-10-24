@@ -1,9 +1,21 @@
 import app from "./server.js"
 import mongoose from "mongoose";
 import node from "./api/nodes.route.js"
+
 import dotenv from 'dotenv';
 
+mongoose.connect("mongodb+srv://Sanket:nhp@cluster0.0pyou.mongodb.net/EduBuzz");
 
+
+app.get('/api/register', (res, req)=> {
+    res.json({status: ok})
+    console.log(res.body)
+    res.send(JSON.stringify({nhp : "nhp"}))
+})
+
+app.get('/api', (req, res) => {
+    res.send("Done");
+})
 
 
 
