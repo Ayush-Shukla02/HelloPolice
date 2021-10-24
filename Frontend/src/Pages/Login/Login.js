@@ -1,6 +1,34 @@
+import React, {useState} from 'react'
+
 import "./Login.css";
 
 export default function Login() {
+
+	const [email, setEmail] = useState('')
+	const [password, setPassword] = useState('')
+
+	async function registerUser(event) {
+		event.preventDefault()
+
+		const response = await fetch('http://localhost:4000/api/register', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				email,
+				password,
+			}),
+		})
+
+		const data = await response.json()
+
+		if (data.status === 'ok') {
+			// history.push('/login')
+            window.location.href = '/tracker'
+		}
+	}
+
     return (
         <>
             <section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden h-screen pt-5">
@@ -35,7 +63,7 @@ export default function Login() {
                             </div>
                             <div className="w-full lg:w-1/2 px-4">
                                 <div className="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg">
-                                    <form action="#">
+                                    <form onSubmit={registerUser} action="#">
                                         <h3 className="mb-10 text-2xl text-white font-bold font-heading">
                                             Register Account
                                         </h3>
@@ -78,10 +106,11 @@ export default function Login() {
                                                     />
                                                 </svg>
                                             </span>
-                                            <input
+                                            <input value={email}
                                                 className="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
                                                 type="email"
                                                 placeholder="example@edubuzz.com"
+                                                onChange={(e)=> setEmail(e.target.value)}
                                             />
                                         </div>
                                         <div className="flex items-center pl-6 mb-3 bg-white rounded-full">
@@ -104,10 +133,11 @@ export default function Login() {
                                                     />
                                                 </svg>
                                             </span>
-                                            <input
+                                            <input value={password} 
                                                 className="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
                                                 type="password"
                                                 placeholder="Password"
+                                                onChange={(e)=> setPassword(e.target.value)}
                                             />
                                         </div>
                                         <div className="flex items-center pl-6 mb-6 bg-white rounded-full">
