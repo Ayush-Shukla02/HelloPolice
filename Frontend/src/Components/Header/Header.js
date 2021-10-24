@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../../images/logo11.png";
 
 export default function Header() {
     return (
@@ -6,7 +7,7 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg navbar-dark nav2">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        EduBuzz
+                        <img src = {logo} height = "200" width = "150" alt = ""/>
                     </a>
                     <button
                         className="navbar-toggler"
