@@ -8,6 +8,6 @@ const Flashcard = new mongoose.Schema(
 	},
 )
 
-const model = mongoose.model('FlashCard', User)
+const model = mongoose.model('FlashCard', Flashcard)
 
 export default model
