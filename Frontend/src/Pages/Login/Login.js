@@ -3,7 +3,7 @@ import "./Login.css";
 export default function Login() {
     return (
         <>
-            <section className="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden h-screen pt-5">
+            <section className="relative py-20 2xl:py-40  overflow-hidden h-screen pt-5">
                 <img
                     className="hidden lg:block absolute inset-0 mt-32"
                     src="zospace-assets/lines/line-mountain.svg"
@@ -34,7 +34,7 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/2 px-4">
-                                <div className="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg">
+                                <div className="px-6 lg:px-20 py-12 lg:py-24  rounded-lg">
                                     <form action="#">
                                         <h3 className="mb-10 text-2xl text-white font-bold font-heading">
                                             Register Account
