@@ -22,7 +22,7 @@ const initialElements = [
 ];
 
 let id = 0;
-const getId = () => `dndnode_${id++}`;
+const getId = () => `${id++}`;
 
 const Flowchart = () => {
   const reactFlowWrapper = useRef(null);
