@@ -11,7 +11,7 @@ router.route('/').post( async (req, res) => {
 	})
 
 	if (!user) {
-        const user = await usermodel.create(req.body);
+        await usermodel.create(req.body);
         res.send({status: 'ok'});
 	}
     else{
