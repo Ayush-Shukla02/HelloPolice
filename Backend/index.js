@@ -2,7 +2,6 @@ import app from "./server.js"
 import mongoose from "mongoose";
 import node from "./api/nodes.route.js"
 
-import dotenv from 'dotenv';
 
 mongoose.connect("mongodb+srv://Sanket:nhp@cluster0.0pyou.mongodb.net/EduBuzz");
 
