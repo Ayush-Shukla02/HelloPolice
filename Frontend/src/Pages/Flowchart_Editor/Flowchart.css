@@ -12,6 +12,12 @@ body{
     background-attachment: fixed;
 }
 .reactflow-wrapper{
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
+    z-index: 0;
+}
+.controls{
+    position:absolute;
+    bottom:1%;
+    
 }
