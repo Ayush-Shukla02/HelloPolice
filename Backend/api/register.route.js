@@ -1,3 +1,4 @@
+//ok
 import express from "express"
 import usermodel from '../models/user.model.js'
 const router = express.Router()
@@ -11,10 +12,14 @@ router.route('/').post( async (req, res) => {
 	})
 
 	if (!user) {
-        const user = await usermodel.create(req.body);
-        res.send(user);
+        await usermodel.create(req.body);
+        res.send({status: 'ok'});
 	}
-    res.send({status: 'ok'});
+    else{
+        if(user.password === req.body.password)
+        res.send({status: 'ok'});
+    }
+
 
 })
 
