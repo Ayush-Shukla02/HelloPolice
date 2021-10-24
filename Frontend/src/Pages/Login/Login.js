@@ -19,9 +19,6 @@ export default function Login() {
                         <div className="flex flex-wrap items-center -mx-4">
                             <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                                 <div className="max-w-md">
-                                    <span className="text-lg text-blue-400 font-bold">
-                                        Register Account
-                                    </span>
                                     <h2 className="mt-8 mb-12 text-5xl font-bold font-heading text-white">
                                         Start your organised learning journey
                                     </h2>
