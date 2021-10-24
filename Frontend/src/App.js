@@ -8,10 +8,12 @@ import Flowchart from "./Pages/Flowchart_Editor/Flowchart";
 import Tracker from "./Pages/Tracker/Tracker";
 import ParticleBackground from "./ParticleBackground";
 
+
 function App() {
     return (
         <Router>
             <Header />
+           
             <Switch>
                 <Route exact path="/">
                     <Home />
