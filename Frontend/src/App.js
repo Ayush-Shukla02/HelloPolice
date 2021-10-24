@@ -8,10 +8,12 @@ import Flowchart from "./Pages/Flowchart_Editor/Flowchart";
 import Tracker from "./Pages/Tracker/Tracker";
 import ParticleBackground from "./ParticleBackground";
 
+
 function App() {
     return (
         <Router>
             <Header />
+           
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -20,7 +22,11 @@ function App() {
                     <Login />
                 </Route>
                 <Route path="/flowcharts">
+<<<<<<< Updated upstream
                     <Flowchart />
+=======
+                <Flowchart/>
+>>>>>>> Stashed changes
                 </Route>
                 <Route path="/tracker">
                     <ParticleBackground />
