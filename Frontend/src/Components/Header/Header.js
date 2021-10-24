@@ -40,16 +40,17 @@ export default function Header() {
                                     Tracker
                                 </a>
                             </li>
-
                         </ul>
                         <ul className="navbar-nav me-auto">
                             <li>
                                 <a
-                                className="block py-1 px-3 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"
-                                href="/login">Sign in</a>
+                                    className="block py-1 px-3 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"
+                                    href="/login"
+                                >
+                                    Sign in
+                                </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
