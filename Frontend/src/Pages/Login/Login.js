@@ -59,7 +59,7 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/2 px-4">
-                                <div className="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg">
+                                <div className="px-6 lg:px-20 py-12 lg:py-24 rounded-lg">
                                     <form onSubmit={registerUser} action="#">
                                         <h3 className="mb-10 text-2xl text-white font-bold font-heading">
                                             Register Account
