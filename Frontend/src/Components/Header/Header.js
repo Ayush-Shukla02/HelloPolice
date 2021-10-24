@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../../images/logo111.png";
 
 export default function Header() {
     return (
@@ -6,7 +7,7 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg navbar-dark nav2">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        EduBuzz
+                        <img src = {logo} height = "200" width = "150" alt = ""/>
                     </a>
                     <button
                         className="navbar-toggler"
@@ -40,16 +41,17 @@ export default function Header() {
                                     Tracker
                                 </a>
                             </li>
-
                         </ul>
                         <ul className="navbar-nav me-auto">
                             <li>
                                 <a
-                                className="block py-1 px-3 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"
-                                href="/login">Sign in</a>
+                                    className="block py-1 px-3 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"
+                                    href="/login"
+                                >
+                                    Sign in
+                                </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
