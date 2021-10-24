@@ -1,3 +1,9 @@
 .max-w-lg{
     font-size: 5rem;
 }
+.bgimg{
+    height: 65vh;
+}
+.relative{
+    justify-content: space-around;
+}
