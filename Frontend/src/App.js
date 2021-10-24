@@ -19,7 +19,7 @@ function App() {
                 <Route path="/login">
                     <Login />
                 </Route>
-                <Route path="/flowchart">
+                <Route path="/flowcharts">
                     <Flowchart />
                 </Route>
                 <Route path="/tracker">
