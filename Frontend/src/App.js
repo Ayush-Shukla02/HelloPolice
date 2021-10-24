@@ -22,11 +22,7 @@ function App() {
                     <Login />
                 </Route>
                 <Route path="/flowcharts">
-<<<<<<< Updated upstream
-                    <Flowchart />
-=======
                 <Flowchart/>
->>>>>>> Stashed changes
                 </Route>
                 <Route path="/tracker">
                     <ParticleBackground />

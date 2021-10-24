@@ -1,21 +1,9 @@
-<<<<<<< Updated upstream
-import React from "react";
-=======
-import ReactDOM from "react-dom";
->>>>>>> Stashed changes
+
 import "./Flowchart.css";
 import React, { useState ,useEffect,useCallback} from 'react'
 import ReactFlow ,  { removeElements, addEdge ,isNode,useStoreState  } from 'react-flow-renderer';
 import customNode from '../../Components/Flowchart/customNode';
 
-<<<<<<< Updated upstream
-function Flowchart() {
-    return (
-        <>
-            <div className="flowchart">This is flowchart editor page</div>
-        </>
-    );
-=======
 
 const nodeTypes ={
     special: customNode,
@@ -122,7 +110,6 @@ const Flowchart = () => {
          
         </div>
     )
->>>>>>> Stashed changes
 }
 
 export default Flowchart
