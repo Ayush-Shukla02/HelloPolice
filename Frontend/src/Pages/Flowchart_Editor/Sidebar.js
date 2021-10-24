@@ -1,6 +1,7 @@
  import React from 'react';
+import  "./sidebar.css"; 
 
- export default () => {
+export default () => {
   const onDragStart = (event, nodeType) => {
      event.dataTransfer.setData('application/reactflow', nodeType);
      event.dataTransfer.effectAllowed = 'move';
@@ -8,16 +9,12 @@
 
    return (
      <aside className="sidebar">
-       <div className="description">You can drag these nodes to the pane on the right.</div>
-       <div className="dndnode input" onDragStart={(event) => onDragStart(event, 'input')} draggable>
-         Start Node
+       <div className="description">Start by dragging and dropping a node into the screen. You can connect the nodes by connecting the handle on the bottom of the node to the handle on top of next node</div>
+       
+       <div className="glow-on-hover" onDragStart={(event) => onDragStart(event, 'default')} draggable>
+        Drag Me
        </div>
-       <div className="dndnode" onDragStart={(event) => onDragStart(event, 'default')} draggable>
-        Node
-       </div>
-       <div className="dndnode output" onDragStart={(event) => onDragStart(event, 'output')} draggable>
-         End Node
-       </div>
+       
      </aside>
    );
  };

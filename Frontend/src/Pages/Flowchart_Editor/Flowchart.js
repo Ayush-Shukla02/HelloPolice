@@ -13,12 +13,7 @@ import Sidebar from './Sidebar';
 
 
 const initialElements = [
-  {
-    id: '1',
-    type: 'input',
-    data: { label: 'input node' },
-    position: { x: 250, y: 5 },
-  },
+  
 ];
 
 let id = 0;
@@ -53,7 +48,7 @@ const Flowchart = () => {
       id: getId(),
       type,
       position,
-      data: { label: `${type} node` },
+      data: { label: `node` },
     };
 
     setElements((es) => es.concat(newNode));
@@ -74,7 +69,7 @@ const Flowchart = () => {
             onDragOver={onDragOver}
             deleteKeyCode ={46}
           >
-            <Controls />
+            <Controls className='controls' />
           </ReactFlow>
         </div>
         

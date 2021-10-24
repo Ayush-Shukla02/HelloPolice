@@ -1,5 +1,48 @@
 .sidebar{
     position: absolute;
-    top: 10vh;
+    top: 9vh;
+    z-index: 999;
     
 }
+.description {
+    position: absolute;
+    width:20vw;
+    height: 30vh;
+    background: #FAB53A;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5%;
+    left: 78vw;
+    top: 9vh;
+    text-align:center;
+
+
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #FAB53A;
+    cursor: pointer;
+    z-index: 999;
+    text-align: center;
+    padding: 2.5%;
+    border-radius: 10px;
+    margin-top: 30%;
+    font-size: 130%;
+}
+.glow-on-hover:hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color:#111 ;
+    background: #fff;
+    cursor: pointer;
+    z-index: 999;
+   
+    border-radius: 10px;
+}
+
